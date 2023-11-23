@@ -1,0 +1,17 @@
+ need alert prompt when you click the button
+
+ prompt for how many characters between 8 and 128
+
+ prompt for uppercase
+
+ prompt for lowercase
+
+ prompt for special charactors
+
+ prompt for numbers
+
+
+ need a list of all available uppercase, lowercase, numbers, and special charactors
+
+ user choice variable for each question
+
