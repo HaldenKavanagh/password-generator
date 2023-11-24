@@ -11,7 +11,7 @@
  prompt for numbers
 
 
- need a list of all available uppercase, lowercase, numbers, and special charactors
+ need an array of all available uppercase, lowercase, numbers, and special charactors
 
  user choice variable for each question
 
