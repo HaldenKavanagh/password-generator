@@ -6,9 +6,16 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   // criteria prompts
 
-  var length = prompt(
-    "How many characters would you like your password to be? (between 8 and 120)"
-  );
+  var length = 0;
+
+  while (length < 8 || length > 128 || isNaN(length)) {
+    length = parseInt(
+      prompt(
+        "How many characters would you like your password to be? (between 8 and 120)"
+      )
+    );
+  }
+
   var lowercaseConfirm = confirm("Do you want to use lowercase letters?");
   var uppercaseConfirm = confirm(
     "Would you like to include uppercase letters?"
@@ -30,15 +37,35 @@ function generatePassword() {
   // final password generator
 
   let password = "";
-  let str = "abcdefghijklmnopqrstuvwxyx";
 
-  for (let i = 0; i < length; i++) {
-    let char = Math.floor(Math.random() * str.length + 1);
+  let passwordOptions = "";
 
-    password += str.charAt(char);
+  if (lowercaseConfirm) {
+    password += randomiser(lowercase);
+    passwordOptions += lowercase;
+  }
+  if (uppercaseConfirm) {
+    password += randomiser(uppercase);
+    passwordOptions += uppercase;
+  }
+  if (numbersConfirm) {
+    password += randomiser(numbers);
+    passwordOptions += numbers;
+  }
+  if (charactersConfirm) {
+    password += randomiser(characters);
+    passwordOptions += characters;
+  }
+
+  for (let i = password.length; i < length; i++) {
+    password += randomiser(passwordOptions);
   }
 
   return password;
+}
+
+function randomiser(str) {
+  return str[Math.floor(Math.random() * str.length)];
 }
 // Write password to the #password input
 function writePassword() {
