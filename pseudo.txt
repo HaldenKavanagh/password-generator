@@ -1,17 +1,17 @@
- need alert prompt when you click the button
+when you click the generate button 
+    prompt for how many characters you want
+    prompt for lowercase
+    prompt for uppercase
+    prompt for numbers
+    prompt for charactors
 
- prompt for how many characters between 8 and 128
+need variables for uppercase, lowercase, numbers, and special charactors inside the generatePassword function
 
- prompt for uppercase
+something to not let you select nothing
+something to keep your length between 8 and 120 charactors
 
- prompt for lowercase
-
- prompt for special charactors
-
- prompt for numbers
+code to input your selected criteria to the generator itself
 
 
- need an array of all available uppercase, lowercase, numbers, and special charactors
 
- user choice variable for each question
 
