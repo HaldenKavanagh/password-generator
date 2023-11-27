@@ -1,16 +1,16 @@
 when you click the generate button 
     prompt for how many characters you want
+        must be between 8 and 128
     prompt for lowercase
     prompt for uppercase
     prompt for numbers
     prompt for charactors
 
-need variables for uppercase, lowercase, numbers, and special charactors inside the generatePassword function
+need variables for ALL uppercase, lowercase, numbers, and special charactors inside the generatePassword function
 
-something to not let you select nothing
-something to keep your length between 8 and 120 charactors
+calls for the selected criteria(if statemants)
 
-code to input your selected criteria to the generator itself
+Math.floor and Math.random functions to generate a random password form the users selected criteria.
 
 
 
