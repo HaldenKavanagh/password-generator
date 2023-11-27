@@ -1,11 +1,8 @@
-// Assignment code here
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-
+// generate password function
 function generatePassword() {
   // criteria prompts
-
   var length = 0;
 
   while (length < 8 || length > 128 || isNaN(length)) {
@@ -34,8 +31,6 @@ function generatePassword() {
 
   // calls for correct criteria
 
-  // final password generator
-
   let password = "";
 
   let passwordOptions = "";
@@ -63,6 +58,8 @@ function generatePassword() {
 
   return password;
 }
+
+// randomiser
 
 function randomiser(str) {
   return str[Math.floor(Math.random() * str.length)];
