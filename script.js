@@ -8,7 +8,7 @@ function generatePassword() {
   while (length < 8 || length > 128 || isNaN(length)) {
     length = parseInt(
       prompt(
-        "How many characters would you like your password to be? (between 8 and 120)"
+        "How many characters would you like your password to be? (between 8 and 128)"
       )
     );
   }

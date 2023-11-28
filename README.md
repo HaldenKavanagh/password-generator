@@ -10,4 +10,8 @@ Simply click the generte button and follow the on screen prompts to select the c
 
 ## Screenshot
 
+![deployed-ss](image.png)
+
 ## Link to deployed application
+
+https://haldenkavanagh.github.io/password-generator/
