@@ -10,7 +10,7 @@ Simply click the generte button and follow the on screen prompts to select the c
 
 ## Screenshot
 
-![deployed-ss](image.png)
+![deployed-ss](password-generator-ss.jpg)
 
 ## Link to deployed application
 
